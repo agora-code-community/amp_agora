@@ -23,10 +23,14 @@ limitations under the License.
   <title>Agora | Code Community</title>
   <link rel="canonical" href="https://www.ampstart.com/templates/article.amp">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
+  <meta name="apple-itunes-app" content="app-id=828256236, app-argument=medium://p/9ea61abf530f">
+  <link rel="manifest" href="/amp-app-banner-manifest.json">
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
   <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
+
 
 
 
@@ -198,7 +202,7 @@ limitations under the License.
     .pb3{padding-bottom:1.5rem}
     .pl3{padding-left:1.5rem}
     .py3{padding-top:1.5rem;padding-bottom:1.5rem}
-    .px3{padding-left:1.5rem;padding-right:1.5rem}
+    .px3{padding-left:5rem;padding-right:5rem}
     .p4{padding:2rem}
     .pt4{padding-top:2rem}
     .pr4{padding-right:2rem}
@@ -448,6 +452,19 @@ limitations under the License.
     .ampstart-social-box{display:-webkit-box;display:-ms-flexbox;display:flex}
     .ampstart-social-box>amp-social-share{background-color:#000}
     .ampstart-icon{fill:#003f93}
+    form.amp-form-submit-success [submit-success],
+	form.amp-form-submit-error [submit-error]{
+	  margin-top: 16px;
+	}
+	form.amp-form-submit-success [submit-success] {
+	  color: green;
+	}
+	form.amp-form-submit-error [submit-error] {
+	  color: red;
+	}
+	form.amp-form-submit-success.hide-inputs > input {
+	  display: none;
+	}
   </style>
 </head>
 <body>
@@ -604,6 +621,51 @@ limitations under the License.
 		</section>
 		<!-- End Related Section -->
     </article>
+    <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+	  <amp-img width="404" height="245" layout="responsive" src="img/wide_image_logo.png" media="(max-width: 1300px)"></amp-img>
+	  <amp-img height="245" layout="fixed-height" src="img/wide_image_logo.png" media="(min-width: 1300px)"></amp-img>
+	  <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+	    <header class="p3">
+	      <h1 class="ampstart-fullpage-hero-heading mb3">
+	        
+	      </h1>
+	    </header>
+	    <footer class="absolute left-0 right-0 bottom-0">
+	        <span class="ampstart-fullpage-hero-heading-text">
+	          SIGN UP FOR OUR NEWSLETTER
+	        </span>
+	        <div class="ampstart-input inline-block relative m0 p0 mb3">
+			<input type="email"
+			class="block border-none p0 m0"
+			name="email"
+			placeholder="Email Address"
+			required>
+			</div>
+			<input type="submit"
+			value="Get Notified"
+			class="ampstart-btn caps">
+			<div submit-success>
+			<template type="amp-mustache">
+			Success! Thanks for trying the
+			<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+			<code>amp-form</code> handles errors.
+			</template>
+			</div>
+			<div submit-error>
+				<template type="amp-mustache">
+				Error! Thanks {{name}} for trying the
+				<code>amp-form</code> demo with an error response.
+			</template>
+			</div>
+		</div>
+	    </footer>
+	  </figcaption>
+	</figure>
+    <!-- Text Input with value -->
+    <div>
+		
+		
+	</div>
   </main>
 
   <!-- Start Footer -->
