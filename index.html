@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<html ⚡="" xmlns:padding-top="http://www.w3.org/1999/xhtml">
+<html ⚡ ="">
 
 <head>
     <meta charset="utf-8">
@@ -24,19 +24,27 @@ limitations under the License.
     <link rel="canonical" href="https://www.ampstart.com/templates/article.amp">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="apple-itunes-app" content="app-id=828256236, app-argument=medium://p/9ea61abf530f">
-    <link rel="manifest" href="/amp-app-banner-manifest.json">
+    <!--<link rel="manifest" href="/amp-app-banner-manifest.json">-->
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
+<!--
     <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
+-->
+<!--
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+-->
+<!--
     <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
-
+-->
 
     <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-
+<!--
     <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+-->
+<!--
     <script custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js" async=""></script>
+-->
 
     <style amp-custom="">/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
     /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -326,14 +334,6 @@ limitations under the License.
     @media (min-width:40.06rem) and (max-width:52rem){.sm-hide{display:none}}
     @media (min-width:52.06rem) and (max-width:64rem){.md-hide{display:none}}
     @media (min-width:64.06rem){.lg-hide{display:none}}
-
-    /*hero image padding start*/
-    @media (max-width:40rem){.hero-img-padding{padding-top: 200px; padding-left: 50px; padding-right: 50px}}
-    @media (min-width:40.06rem) and (max-width:52rem){.hero-img-padding{padding-top: 200px; padding-left: 100px; padding-right: 100px}}
-    @media (min-width:52.06rem) and (max-width:64rem){.hero-img-padding{padding-top: 200px; padding-left: 200px; padding-right: 200px}}
-    @media (min-width:64.06rem){.hero-img-padding{padding-top: 100px; padding-left: 200px; padding-right: 200px}}
-    /*hero image padding end*/
-
     .display-none{display:none}
     *{box-sizing:border-box}
     body{background:#fff;color:#4a4a4a;line-height:1.5rem;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;min-width:315px;overflow-x:hidden;font-smooth:always;-webkit-font-smoothing:antialiased}
@@ -469,6 +469,78 @@ limitations under the License.
     form.amp-form-submit-success.hide-inputs > input {
         display: none;
     }
+
+        /*Custom code*/
+
+    /*Responsive Code*/
+    @media (max-width:40rem){
+        /*Extra Small Screen*/
+        /*hero area padding*/
+        .hero-img-padding{
+            padding-top: 200px;
+            padding-left: 50px;
+            padding-right: 50px}
+        /*start logo size*/
+        .agora-logo-size{
+            height: 47px;
+            width: 45px;
+        }
+    }
+    @media (min-width:40.06rem) and (max-width:52rem){
+        /*Small Screen*/
+        /*hero area padding*/
+        .hero-img-padding{
+            padding-top: 200px;
+            padding-left: 100px;
+            padding-right: 100px}
+        /*start logo size*/
+        .agora-logo-size{
+            height: 47px;
+            width: 45px;
+        }
+    }
+    @media (min-width:52.06rem) and (max-width:64rem){
+        /*medium*/
+        /*hero area padding*/
+        .hero-img-padding{
+            padding-top: 200px;
+            padding-left: 200px;
+            padding-right: 200px}
+        /*start logo size*/
+        .agora-logo-size{
+            height: 69px;
+            width: 66.5px;
+        }
+    }
+    @media (min-width:64.06rem){
+        /*Large screen*/
+        /*hero area padding*/
+        .hero-img-padding{
+            padding-top: 100px;
+            padding-left: 200px;
+            padding-right: 200px}
+        /*start logo size*/
+        .agora-logo-size{
+            height: 69px;
+            width: 66.5px;
+        }
+    }
+    /*hero image padding end*/
+
+        /*Start Navbar*/
+        .agora-start-navbar{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 10px;
+        }
+        .agora-hero-area-background{
+            background: rgba(0, 0, 0, 0) linear-gradient(135deg, #efefef 0%, #d4d4d4 100%) repeat scroll 0 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .agora-logo-size{
+        }
     </style>
 
 </head>
@@ -476,8 +548,8 @@ limitations under the License.
 
 <!-- Start Navbar -->
 <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    <div style="padding-top: 8px; padding-left: 10px">
-        <amp-img src="img/agora_logo_nav_bar.png" height="69" width="66.5"></amp-img>
+    <div class="agora-start-navbar">
+        <amp-img src="img/agora_logo_nav_bar.png" class="agora-logo-size" layout="responsive" height="69" width="66.5"></amp-img>
     </div>
     <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
         <ul class="list-reset center m0 p0 flex justify-end nowrap">
@@ -493,8 +565,8 @@ limitations under the License.
         </ul>
     </nav>
     <nav class="ampstart-headerbar-nav ampstart-nav md-hide lg-hide">
-        <ul class="list-reset center m0 p0 flex justify-end nowrap" style="padding-top: 8px; padding-left: 10px">
-            <amp-img src="img/menu.png" height="48" width="48" role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2"></amp-img>
+        <ul class="list-reset center m0 p0 flex justify-end nowrap">
+            <amp-img class="agora-start-menu-icon" src="img/menu.png" height="48" width="48" role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2"></amp-img>
         </ul>
     </nav>
 
@@ -545,8 +617,8 @@ limitations under the License.
 
 <!-- Start Fullpage Hero -->
 <!--opted for some inline css-->
-<div id="Hero-Area" class="hero-img-padding" style=" background: rgba(0, 0, 0, 0) linear-gradient(135deg, #efefef 0%, #d4d4d4 100%) repeat scroll 0 0; height: 100vh; width: 100vw;">
-    <amp-img style="display: block;margin: auto;" src="img/opti_agora_logo_new_c.png" height="157px" width="400px" layout="responsive"></amp-img>
+<div id="Hero-Area" class="hero-img-padding agora-hero-area-background">
+    <amp-img class="" src="img/opti_agora_logo_new_c.png" height="157px" width="400px" layout="responsive"></amp-img>
 </div>
 <!-- End Fullpage Hero -->
 
@@ -567,7 +639,7 @@ limitations under the License.
                 <li class="col-12 sm-col-3 md-col-3 lg-col-3 pr2 py2">
                     <!-- Start Image with Caption -->
                     <figure class="ampstart-image-with-caption m0 relative mb4">
-                        <amp-img src="img/landing/images/opti_puzzle_img.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
+                        <amp-img src="img/opti_puzzle_img.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
                         <figcaption class="h5 mt1 px3">
                             <h3>Hack</h3>
                             <span class="ampstart-image-credit block bold">
@@ -580,7 +652,7 @@ limitations under the License.
                 <li class="col-12 sm-col-3 md-col-3 lg-col-3 pr2 py2">
                     <!-- Start Image with Caption -->
                     <figure class="ampstart-image-with-caption m0 relative mb4">
-                        <amp-img src="img/landing/images/opti_handshake_img.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
+                        <amp-img src="img/opti_handshake_img.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
                         <figcaption class="h5 mt1 px3">
                             <h3>Outreach</h3>
                             <span class="ampstart-image-credit block bold">
@@ -595,7 +667,7 @@ limitations under the License.
 
                     <!-- Start Image with Caption -->
                     <figure class="ampstart-image-with-caption m0 relative mb4">
-                        <amp-img src="img/landing/images/opti_training.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
+                        <amp-img src="img/opti_training.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
                         <figcaption class="h5 mt1 px3">
                             <h3>Training</h3>
                             <span class="ampstart-image-credit block bold">
@@ -610,7 +682,7 @@ limitations under the License.
 
                     <!-- Start Image with Caption -->
                     <figure class="ampstart-image-with-caption m0 relative mb4">
-                        <amp-img src="img/landing/images/opti_globe.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
+                        <amp-img src="img/opti_globe.png" width="112.5" height="112.5" layout="responsive" class=""></amp-img>
                         <figcaption class="h5 mt1 px3">
                             <h3>Community</h3>
                             <span class="ampstart-image-credit block bold">
@@ -647,19 +719,19 @@ limitations under the License.
                 <input type="submit"
                        value="Get Notified"
                        class="ampstart-btn caps">
-                <div submit-success>
-                    <template type="amp-mustache">
-                        Success! Thanks for trying the
-                        <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
-                        <code>amp-form</code> handles errors.
-                    </template>
-                </div>
-                <div submit-error>
+                <!--<div submit-success>-->
+                    <!--<template type="amp-mustache">-->
+                        <!--Success! Thanks for trying the-->
+                        <!--<code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how-->
+                        <!--<code>amp-form</code> handles errors.-->
+                    <!--</template>-->
+                <!--</div>-->
+                <!--<div submit-error>
                     <template type="amp-mustache">
                         Error! Thanks {{name}} for trying the
                         <code>amp-form</code> demo with an error response.
                     </template>
-                </div>
+                </div>-->
                 </div>
             </footer>
         </figcaption>
